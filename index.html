@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luma Beauty</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <div class="logo">
+                <!-- <span class="logo-icon">&#10024;</span> -->
+                <img src="images/logo.svg" alt="" class="logo-img">
+                <span class="logo-text">Luma <small>Beauty</small></span>
+
+                <!-- <span class="logo-icon">&#10024;</span>
+            <span class="logo-text">Luma <small>Beauty</small></span> -->
+            </div>
+            <nav class="main-nav">
+                <a href="#Home">Home</a>
+                <a href="#Bestsellers">Bestsellers</a>
+                <a href="#Shop">Shop</a>
+                <a href="#Reviews">Reviews</a>
+                <a href="#Contact">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="Search-wrap">
+                    <span class="search-icon">&#128269;</span>
+                    <input type="text" id="searchInput" placeholder="Search products....." class="Search-box"
+                        autocomplete="off">
+                </div>
+                <div id="searchSuggestions" class="search-suggestions hidden"></div>
+                <button id="cartbtn" class="cart-btn">
+                    &#128717; <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="wrop">
+            <p class="eyebrow">New Season Collection</p>
+            <h1>Beauty is <em>Your Story</em></h1>
+            <p>Discover luxury cosmetics curated from the world's most beloved beauty brands.</p>
+            <a href="" class="btn btn-primary">Shop Now</a>
+        </div>
+    </section>
+    <section class="icons-section wrop">
+        <div>
+            <div class="icon-card">
+                <img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=300&h=300&fit=crop"
+                    alt="all products">
+            </div>
+            <span class="icon-emoji">&#10024;</span>
+            <span class="icon-label">All products</span>
+        </div>
+
+        <div>
+            <div class="icon-card">
+                <img src="https://images.unsplash.com/photo-1557205465-f3762edea6d3?w=300&h=300&fit=crop"
+                    alt="Skincare">
+            </div>
+            <span class="icon-emoji">&#127807;</span>
+            <span class="icon-label">Skincare</span>
+        </div>
+
+        <div>
+            <div class="icon-card">
+                <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=300&h=300&fit=crop"
+                    alt="Customer reviews">
+            </div>
+            <span class="icon-emoji">&#128172;</span>
+            <span class="icon-label">Customer reviews <span>
+        </div>
+    </section>
+    <section class="shop-section wrop">
+        <h2 class="section-title">Bestsellers</h2>
+        <p class="section-sub">Our most-loved products, chosen by thousands of customers.</p>
+        <div class="product-grid" id="BestsellersGred"></div>
+    </section>
+
+    <section class="shop-section wrop alt">
+        <h2 class="section-title">New Arrivals</h2>
+        <p class="section-sub">Just landed — the newest additions to our collection.</p>
+        <div class="product-grid" id="newArrivalsGrid"></div>
+    </section>
+
+    <section class="shop-section wrap">
+        <h2 class="section-title">Shop All Products</h2>
+        <div class="filters" id=" filters"></div>
+        <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="reviews-section wrap">
+        <h2 class="section-title">Customer Reviews</h2>
+        <p class="section-sub">See what our customers say, or share your own experience.</p>
+        <div class="reviews- layout">
+            <div class="review-list" id="reviewsList"></div>
+
+            <form action="" class="review-from">
+                <h3>Add Your Review</h3>
+                <input type="text" name="name" placeholder="your full name" required>
+                <input type="text" name="email" placeholder="your email" required>
+                <div class="rating-select">
+                    <button type="button" class="star-pick" data-star="1">&#9733;</button>
+                    <button type="button" class="star-pick" data-star="2">&#9733;</button>
+                    <button type="button" class="star-pick" data-star="3">&#9733;</button>
+                    <button type="button" class="star-pick" data-star="4">&#9733;</button>
+                </div>
+                <textarea name="reviewText" id="reviewText" rows="4" placeholder="write your review...."
+                    required></textarea>
+                <button class="btn btn-primary" type="submit">Publish Review</button>
+            </form>
+        </div>
+    </section>
+    <section id="content" class="Contact-section">
+        <div class="wrop">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="content-success hidden" id="contactSuccess"> We received your message and will get back to you
+                shortly.
+            </div>
+            <form action="" class="contact-form">
+                <input type="text" name="text" placeholder="Full name" required>
+                <input type="email" name="email" placeholder="Email address" required>
+                <textarea name="message" placeholder="your message" rows="4" required></textarea>
+                <button class="btn btn-primary" type="submit">Send Message </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <p>&copy; 2026 Luma Beauty. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
